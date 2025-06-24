@@ -3,12 +3,12 @@ using Verse;
 
 namespace PronounsMod
 {
-    public class PronounsModMod : Mod
+    public class PronounsMod : Mod
     {
         public const string PACKAGE_ID = "pronounsmod.1trickPwnyta";
-        public const string PACKAGE_NAME = "PronounsMod";
+        public const string PACKAGE_NAME = "Pronouns!";
 
-        public PronounsModMod(ModContentPack content) : base(content)
+        public PronounsMod(ModContentPack content) : base(content)
         {
             var harmony = new Harmony(PACKAGE_ID);
             harmony.PatchAll();

@@ -5,7 +5,7 @@ namespace PronounsMod
         public static void Log(object message)
         {
 #if DEBUG
-            Verse.Log.Message($"[{PronounsModMod.PACKAGE_NAME}] {message}");
+            Verse.Log.Message($"[{PronounsMod.PACKAGE_NAME}] {message}");
 #endif
         }
     }

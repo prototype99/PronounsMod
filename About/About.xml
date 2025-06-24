@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>PronounsMod</name>
+	<name>Pronouns!</name>
 	<author>1trickPwnyta</author>
 	<packageId>pronounsmod.1trickPwnyta</packageId>
 	<modVersion>1.0.0</modVersion>
@@ -8,7 +8,10 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<description>
+Now your colonists can have pronouns! And by clicking the pronouns box in a pawn's Bio tab, you can change them to pretty much whatever you want.
 
+= Known Issues =
+Some pronouns (such as they/them) use the plural form of verbs. For example, "She is eating without a table" becomes "They *are* eating without a table". Unfortunately, the game is not structured in a way that makes changing these verb forms very simple. As such, pronouns that use plural verbs will only use the correct verb form in certain situations, and even then, only when playing in English.
 
 === Credits ===
 Mod icon: twitter.com/mouse_draws

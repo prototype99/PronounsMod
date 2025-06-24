@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PronounsMod.PronounDef>
+		<defName>she</defName>
+		<label>she/her</label>
+		<subjective>she</subjective>
+		<objective>her</objective>
+		<possessive>her</possessive>
+		<commonalityFemale>1</commonalityFemale>
+	</PronounsMod.PronounDef>
+	
+	<PronounsMod.PronounDef>
+		<defName>he</defName>
+		<label>he/him</label>
+		<subjective>he</subjective>
+		<objective>him</objective>
+		<possessive>his</possessive>
+		<commonalityMale>1</commonalityMale>
+	</PronounsMod.PronounDef>
+	
+	<PronounsMod.PronounDef>
+		<defName>they</defName>
+		<label>they/them</label>
+		<subjective>they</subjective>
+		<objective>them</objective>
+		<possessive>their</possessive>
+		<verbForm>Plural</verbForm>
+		<commonalityFemale>0.1</commonalityFemale>
+		<commonalityMale>0.1</commonalityMale>
+	</PronounsMod.PronounDef>
+	
+	<PronounsMod.PronounDef>
+		<defName>ze</defName>
+		<label>ze/hir</label>
+		<subjective>ze</subjective>
+		<objective>hir</objective>
+		<possessive>hir</possessive>
+	</PronounsMod.PronounDef>
+	
+	<PronounsMod.PronounDef>
+		<defName>xe</defName>
+		<label>xe/xem/xyr</label>
+		<subjective>xe</subjective>
+		<objective>xem</objective>
+		<possessive>xyr</possessive>
+	</PronounsMod.PronounDef>
+
+	<PronounsMod.PronounDef>
+		<defName>ey</defName>
+		<label>ey/em/eir</label>
+		<subjective>ey</subjective>
+		<objective>em</objective>
+		<possessive>eir</possessive>
+		<verbForm>Plural</verbForm>
+	</PronounsMod.PronounDef>
+
+	<PronounsMod.PronounDef>
+		<defName>xey</defName>
+		<label>xey/xem/xeir</label>
+		<subjective>xey</subjective>
+		<objective>xem</objective>
+		<possessive>xeir</possessive>
+		<verbForm>Plural</verbForm>
+	</PronounsMod.PronounDef>
+	
+	<PronounsMod.PronounDef>
+		<defName>it</defName>
+		<label>it/its</label>
+		<subjective>it</subjective>
+		<objective>it</objective>
+		<possessive>its</possessive>
+	</PronounsMod.PronounDef>
+
+</Defs>

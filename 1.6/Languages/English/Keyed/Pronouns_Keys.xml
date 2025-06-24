@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<PronounsMod_Pronouns>Pronouns</PronounsMod_Pronouns>
+	<PronounsMod_PronounsDesc>The pronouns {PAWN_labelShort} prefers to be referred to with.</PronounsMod_PronounsDesc>
+	<PronounsMod_ClickToChange>Click to change pronouns.</PronounsMod_ClickToChange>
+	<PronounsMod_Custom>custom pronouns</PronounsMod_Custom>
+	<PronounsMod_AdvancedSettings>Advanced</PronounsMod_AdvancedSettings>
+	<PronounsMod_PronounsInvalid>All three pronoun forms must be specified.</PronounsMod_PronounsInvalid>
+	<PronounsMod_PawnChangesPronouns>{PAWN_nameDef} has changed {PAWN_possessive} pronouns to {PRONOUNS}.</PronounsMod_PawnChangesPronouns>
+	<PronounsMod_VerbForm>Verb form</PronounsMod_VerbForm>
+	<PronounsMod_VerbFormSingular>Singular</PronounsMod_VerbFormSingular>
+	<PronounsMod_VerbFormPlural>Plural</PronounsMod_VerbFormPlural>
+</LanguageData>
