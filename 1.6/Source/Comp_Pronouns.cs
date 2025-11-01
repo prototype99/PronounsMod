@@ -24,15 +24,16 @@ namespace PronounsMod
             }
         }
 
-        public string Subjective => pronouns?.subjective ?? customSubjective;
+        public string Subjective => pronouns?.subjective ?? customSubjective ?? "they";
 
-        public string Objective => pronouns?.objective ?? customObjective;
+        public string Objective => pronouns?.objective ?? customObjective ?? "them";
 
-        public string Possessive => pronouns?.possessive ?? customPossessive;
+        public string Possessive => pronouns?.possessive ?? customPossessive ?? "their";
 
-        public VerbForm VerbForm => pronouns?.verbForm ?? customVerbForm;
+        // Default to plural verbs when no pronouns are set to avoid "is/are" mismatches
+        public VerbForm VerbForm => pronouns?.verbForm ?? (customVerbForm == 0 ? VerbForm.Plural : customVerbForm);
 
-        public string Label => pronouns?.label ?? $"{customSubjective}/{customObjective}/{customPossessive}";
+        public string Label => pronouns?.label ?? $"{customSubjective ?? "they"}/{customObjective ?? "them"}/{customPossessive ?? "their"}";
 
         public bool IsCustom => pronouns == null;
 
