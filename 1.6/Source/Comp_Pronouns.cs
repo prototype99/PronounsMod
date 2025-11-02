@@ -14,13 +14,11 @@ namespace PronounsMod
         public static void GeneratePronouns(Pawn pawn)
         {
             Comp_Pronouns comp = pawn.TryGetComp<Comp_Pronouns>();
-            if (comp != null)
+            if (comp == null) return;
+            DefDatabase<PronounDef>.AllDefsListForReading.TryRandomElementByWeight(p => pawn.gender == Gender.Female ? p.commonalityFemale : p.commonalityMale, out PronounDef result);
+            if (result != null)
             {
-                DefDatabase<PronounDef>.AllDefsListForReading.TryRandomElementByWeight(p => pawn.gender == Gender.Female ? p.commonalityFemale : p.commonalityMale, out PronounDef result);
-                if (result != null)
-                {
-                    comp.SetPronouns(result);
-                }
+                comp.SetPronouns(result);
             }
         }
 
@@ -41,11 +39,7 @@ namespace PronounsMod
 
         public void SetPronouns(PronounDef def)
         {
-            if (def == null)
-            {
-                throw new ArgumentNullException("PronounDef def must not be null.");
-            }
-            pronouns = def;
+            pronouns = def ?? throw new ArgumentNullException("PronounDef def must not be null.");
             customSubjective = customObjective = customPossessive = null;
         }
 
