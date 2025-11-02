@@ -40,24 +40,17 @@ namespace PronounsMod
                         {
                             str = Regex.Replace(str, $@"[\[{{]{label}_pronoun[\]}}] (\w+)", m => $"{subj} {VerbPluralizer.Pluralize(m.Groups[1].Value)}");
                             str = Regex.Replace(str, $@"[\[{{]{label}_pronoun[\]}}]'s", m => $"{subj}'re");
-                            str = str
-                                .Replace($"{{{label}_pronoun}}", subj)
-                                .Replace($"{{{label}_objective}}", obj)
-                                .Replace($"{{{label}_possessive}}", poss)
-                                .Replace($"[{label}_pronoun]", subj)
-                                .Replace($"[{label}_objective]", obj)
-                                .Replace($"[{label}_possessive]", poss);
                         }
-                        else if (comp.VerbForm == VerbForm.Singular)
-                        {
-                            str = str
-                                .Replace($"{{{label}_pronoun}}", subj)
-                                .Replace($"{{{label}_objective}}", obj)
-                                .Replace($"{{{label}_possessive}}", poss)
-                                .Replace($"[{label}_pronoun]", subj)
-                                .Replace($"[{label}_objective]", obj)
-                                .Replace($"[{label}_possessive]", poss);
-                        }
+
+                        // VerbForm can never be null, and we've already checked for pluralization above,
+                        // therefore, either way, we can safely replace the pronouns
+                        str = str
+                            .Replace($"{{{label}_pronoun}}", subj)
+                            .Replace($"{{{label}_objective}}", obj)
+                            .Replace($"{{{label}_possessive}}", poss)
+                            .Replace($"[{label}_pronoun]", subj)
+                            .Replace($"[{label}_objective]", obj)
+                            .Replace($"[{label}_possessive]", poss);
                     }
                 }
             }
