@@ -76,7 +76,4 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>powershell -ExecutionPolicy Bypass ..\..\Deploy.ps1</PostBuildEvent>
-  </PropertyGroup>
 </Project>
